@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity3">
+    <Button
+        android:id="@+id/move"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Move"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/rotate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Rotate"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/move" />
+
+    <Button
+        android:id="@+id/slide_down"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Slide Down"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rotate" />
+
+    <Button
+        android:id="@+id/slide_up"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Slide Up"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slide_down" />
+
+    <ImageView
+        android:id="@+id/moveImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintTop_toTopOf="@id/move"
+        app:layout_constraintEnd_toEndOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/rotateImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintTop_toTopOf="@id/rotate"
+        app:layout_constraintTop_toBottomOf="@id/moveImg"
+        app:layout_constraintEnd_toEndOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/SlideDownImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintTop_toTopOf="@id/slide_down"
+        app:layout_constraintTop_toBottomOf="@id/rotateImg"
+        app:layout_constraintEnd_toEndOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/SlideUpImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintTop_toTopOf="@id/slide_up"
+        app:layout_constraintTop_toBottomOf="@id/SlideUpImg"
+        app:layout_constraintEnd_toEndOf="parent"></ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
